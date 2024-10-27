@@ -1,0 +1,23 @@
+1-1：A 成員新增一個新的 Repo，增加 index.html，並在 index.html 加入以下內容，在 main commit 一個版本，進行 git push 動作，B 成員也將進度 clone 下來
+
+1-2：A 成員在 main 分支進度上，開一個 feature/newAmember 的分支 ，在成員一名稱寫上自己名字，commit 一個版本後， 將feature/newAmember分支進行 git push，並發 PR 合併到 main，並指派 B 成員 review
+
+1-3：B 成員在 main 分支進度上，開一個 feature/newBmember 的分支 ，在成員二名稱寫上自己名字，commit 一個版本後， 將feature/newBmember分支進行 git push，並發 PR 合併到 main，並指派 A 成員 review
+
+1-4：B 成員到 A 成員發的 PR 進行檢視，並留言「你確認名字要改嗎？」、A 成員回覆：「想了下還是調整下好了」，於是退回 PR
+
+1-5：A 成員 git fetch feature/newBmember 分支，檢視無誤後，審核通過 B 成員的 PR
+
+1-6：A 成員進行 git fetch origin main 指令抓最新版本下來
+
+1-7：A 成員 git checkout 到feature/newAmember，在成員一名稱重新寫上自己調整的名字，再 commit 一個版本後，並合併 origin/main 進度，合併發生衝突需解衝突， 將feature/newAmember分支進行 git push，並發 PR 合併到 main，並指派 B 成員 review
+
+1-8：B 成員 PR 直接審核成功
+
+1-9：B 成員進行 git fetch origin main 指令抓最新版本下來後，git checkout 到origin/main，開一個新分支為feature/editTitle ，並 checkout 過去修改 index.html的 title 為 修改 title B， 將feature/editTitle分支進行 git push，並發 PR 合併到 main，指派 A 成員審核
+
+1-10：A 成員審核 PR 成功後，透過 GitHub Pages 觀看最後結果是否如預期
+
+通關檢核點
+A、B 成員與 GitHub Repo 都有相同的 commit 數量
+預期線圖有符合
